@@ -24,12 +24,17 @@ class Conference
     #[ORM\Column]
     private ?bool $isInternational = null;
 
-    #[ORM\OneToMany(mappedBy: 'conference', targetEntity: comment::class, orphanRemoval: true)]
+    #[ORM\OneToMany(mappedBy: 'conference', targetEntity: Comment::class, orphanRemoval: true)]
     private Collection $comments;
 
     public function __construct()
     {
         $this->comments = new ArrayCollection();
+    }
+
+    public function __toString(): string
+    {
+        return $this->city.' '.$this->year;
     }
 
     public function getId(): ?int
