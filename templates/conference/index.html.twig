@@ -19,11 +19,18 @@
     </ul>
 </div> #}
 
-    {% for conference in conferences %}
-         <h4>{{ conference }}</h4>
-        <p>
-            <a href="{{ path('conference', { id: conference.id }) }}">View</a>
-        </p>
-     {% endfor %}
+<section>
+    <div class="section-container">
+        {% for conference in conferences %}
+            <h4>{{ conference }}</h4>
+            <p>
+                <a href="{{ path('conference', { id: conference.id }) }}">View</a>
+            </p>
+        {% endfor %}
+    </div>
+    
+</section>
+
+    
 
 {% endblock %}

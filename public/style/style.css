@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(228, 228, 228);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h1 a{
+    color: indianred;
+}
+
+.navigation-list{
+    display: flex;
+}
+
+.navigation-list li{
+    margin-left: 1rem;
+}
+
+.navigation-list li a{
+    text-transform: uppercase;
+    color: darkslategray;
+    transition: .3s;
+}
+
+.navigation-list li a:hover{
+    color:saddlebrown;
+    transition: .3s;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .section-container{
+    width: 70%;
+}
